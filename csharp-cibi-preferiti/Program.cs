@@ -24,3 +24,7 @@ for (var i = 0; i < cibiPreferiti.Length; i++)
 {
     Console.WriteLine($"{i + 1}. {cibiPreferiti[i]}");
 }
+
+// Stampa il cibo top e il cibo preferito ma non troppo
+Console.WriteLine($"Il cibo top è {cibiPreferiti[0]}");
+Console.WriteLine($"Il cibo preferito ma non troppo è {cibiPreferiti[cibiPreferiti.Length - 1]}");
