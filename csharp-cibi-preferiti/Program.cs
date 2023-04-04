@@ -17,4 +17,10 @@
 string[] cibiPreferiti = { "Sushi", "Pizza", "Pokè", "Spaghetti", "Risotto", "Tacos" };
 
 // Stampa la lunghezza dell'array di cibi preferiti
-Console.WriteLine($"La classifica è composta da {cibiPreferiti.Length} piatti");
+Console.WriteLine($"La classifica è composta da {cibiPreferiti.Length} piatti:");
+
+// Stampa la classifica con la posizione dei cibi 
+for (var i = 0; i < cibiPreferiti.Length; i++)
+{
+    Console.WriteLine($"{i + 1}. {cibiPreferiti[i]}");
+}
