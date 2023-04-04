@@ -28,3 +28,16 @@ for (var i = 0; i < cibiPreferiti.Length; i++)
 // Stampa il cibo top e il cibo preferito ma non troppo
 Console.WriteLine($"Il cibo top è {cibiPreferiti[0]}");
 Console.WriteLine($"Il cibo preferito ma non troppo è {cibiPreferiti[cibiPreferiti.Length - 1]}");
+
+
+//Bonus
+if (cibiPreferiti.Length % 2 == 0)
+{
+    int ciboMediano = cibiPreferiti.Length / 2;
+    Console.WriteLine($"Il cibo di mezza classifica è {cibiPreferiti[ciboMediano - 1]} e {cibiPreferiti[ciboMediano]}");
+}
+else
+{
+    int ciboMediano = cibiPreferiti.Length / 2;
+    Console.WriteLine($"Il cibo di mezza classifica è {cibiPreferiti[ciboMediano]}");
+}
